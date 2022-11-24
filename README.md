@@ -18,7 +18,7 @@ cd cntlm
 make
 ```
 
-3. Normally if the installation process finished successfully, a cntlm binary will be created is current directory
+3. Normally if the installation process finished successfully, a cntlm binary will be created in the current directory
 ```bash
 file ./cntlm
 # Try to execute the cntlm binary
@@ -53,7 +53,7 @@ tee -a ~/Library/LaunchAgents/cntlm.service.plist <<'EOF'
 EOF
 ```
 
-6. Start cntlm service on start-up and in background
+6. Run cntlm service on start-up and in background
 ```bash
 launchctl load -w ~/Library/LaunchAgents/cntlm.service.plist
 ```
@@ -64,7 +64,7 @@ foo@bar:~$ launchctl list | grep cntlm
 xxx  xxx  cntlm.service 
 ```
 
-8. If we want not to start cntlm on start-up
+8. If we want not to run cntlm on start-up
 ```sh
 launchctl unload -w ~/Library/LaunchAgents/cntlm.service.plist
 ```
