@@ -25,10 +25,10 @@ file ./cntlm
 ./cntlm --help
 ```
 
-4. Copy (or move) cntlm binary into /usr/local/bin
+4. Copy (or move) cntlm binary into /usr/local/bin/
 ```bash
-mv ./cntlm /usr/local/bin
-# Check path of cntlm binary, should be how /usr/local/bin/cntlm
+mv ./cntlm /usr/local/bin/
+# Check path of cntlm binary, should be now /usr/local/bin/cntlm
 which cntlm
 ```
 
