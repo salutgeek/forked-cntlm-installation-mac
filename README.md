@@ -64,7 +64,7 @@ foo@bar:~$ launchctl list | grep cntlm
 xxx  xxx  cntlm.service 
 ```
 
-8. If we want not to run cntlm on start-up
+8. If we don't want to run cntlm on start-up
 ```sh
 launchctl unload -w ~/Library/LaunchAgents/cntlm.service.plist
 ```
