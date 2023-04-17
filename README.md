@@ -32,7 +32,7 @@ mv ./cntlm /usr/local/bin/
 which cntlm
 ```
 
-5. Create a custom cntlm service
+5. Create a custom cntlm service. You can use options `-c` to point to your custom location of the cntlm.conf file (usually the default path of cntlm.conf on macOS is `/usr/local/etc/cntlm.conf`)
 ```bash
 tee -a ~/Library/LaunchAgents/cntlm.service.plist <<'EOF'
 <?xml version="1.0" encoding="UTF-8"?>
@@ -45,6 +45,8 @@ tee -a ~/Library/LaunchAgents/cntlm.service.plist <<'EOF'
 	<array>
 		<string>/usr/local/bin/cntlm</string>
 		<string>-f</string>
+        <string>-c</string>
+        <string>/usr/local/etc/cntlm.conf</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
