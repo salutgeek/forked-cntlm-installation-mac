@@ -45,8 +45,8 @@ tee -a ~/Library/LaunchAgents/cntlm.service.plist <<'EOF'
 	<array>
 		<string>/usr/local/bin/cntlm</string>
 		<string>-f</string>
-        <string>-c</string>
-        <string>/usr/local/etc/cntlm.conf</string>
+        	<string>-c</string>
+        	<string>/usr/local/etc/cntlm.conf</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
