@@ -15,7 +15,7 @@ git clone git@github.com:versat/cntlm.git
 2. build cntlm from scratch
 ```bash
 cd cntlm
-make
+make SYSCONFDIR=/usr/local/etc MANDIR=/usr/share/man
 ```
 
 3. Normally if the installation process finished successfully, a cntlm binary will be created in the current directory
